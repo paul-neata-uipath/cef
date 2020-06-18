@@ -431,8 +431,8 @@ bool ClientHandler::OnConsoleMessage(CefRefPtr<CefBrowser> browser,
     fclose(file);
 
     if (first_console_message_) {
-      test_runner::Alert(
-          browser, "Console messages written to \"" + console_log_file_ + "\"");
+      // test_runner::Alert(
+          // browser, "Console messages written to \"" + console_log_file_ + "\"");
       first_console_message_ = false;
     }
   }
